@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+    overflow: hidden;
+}
+canvas{
+    width: 100%;
+    background-image:url("/img/粒子背景.PNG");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.text_main{
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border:2px solid #a1a1a1;
+    padding:10px 40px; 
+    background:#dddddd;
+    width:350px;
+    border-radius:20px;
+    box-shadow: 5px 5px 5px grey;
+    opacity:0.7;
+}

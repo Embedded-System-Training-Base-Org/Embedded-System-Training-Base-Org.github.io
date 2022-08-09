@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- 外部CSS调用 -->
-        <link rel="stylesheet" href="/CSS/topnav.css">
-        <link rel="stylesheet" href="/CSS/background.css">
-        <link rel="stylesheet" href="/CSS/img.css">
-        <title>嵌入式系统训练基地</title>
-        <link rel="icon" href="/img/bitbug_favicon.ico">
-    </head>
-    <style>
-        body {margin:0;}
-    </style>
-    <body class = "background">
-        <div class="topnav">
-            <a href="../../index.html">主页</a>
-            <a class="active" href="index.html">关于我们</a>
-            <a href="../introduct/index.html">实验室介绍</a>
-            <a href="../recruitment/index.html">招新相关</a>
-        </div>
-        <div align = "center">
-            <a href="/index.html"><img src = "/img/LOGO1.png" width = "100px" alt = "这是个图标" title = "好耶，是个图标！"></a>
-        </div>
-    </body>
-    </html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>嵌入式系统训练基地</title>
+    <link rel="icon" href="/img/bitbug_favicon.ico">
+    <link rel="stylesheet" href="point.css">
+    <link rel="stylesheet" href="../../CSS/topnav.css">
+    <link rel="stylesheet" href="../../CSS/background.css">
+    <link rel="stylesheet" href="../../CSS/show_text.css">
+</head>
+
+<body>
+    <body>
+    <div class="topnav">
+        <a href="../../index.html">主页</a>
+        <a class="active" href="index.html">关于我们</a>
+        <a href="../introduct/index.html">实验室介绍</a>
+        <a href="../recruitment/index.html">招新相关</a>
+    </div>
+    
+    <center>
+        <div class="text_main">
+            <div align = "center">
+                <a href="/index.html"><img src = "/img/LOGO1.png" width = "100px" alt = "这是个图标" title = "好耶，是个图标！"></a>
+            </div class = "text">
+            <h1><center>嵌入式系统训练基地</center></h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;嵌入式系统训练基地成立于2006年，是学校成立最早的科技社团之一。基地科研经费充足，环境优越，成就卓著，先后培养了大批优秀毕业生，现有成员遍布各个学院。目前基地大部分实验室成员都有各种国家级，广西区以及企业项目，现研究方向有基于ARM、linux的底层驱动和上层应用程序开发、计算机视觉、智能家居可穿戴设备、恩智浦智能车等新兴科技产品开发.</p>    
+            </div>
+    </center>
+    
+    <div>        
+        <canvas id="my_canvas"></canvas>
+    </div>
+</body>
+
+</html>
+<!-- 引入粒子插件 -->
+<script src="particle.min.js"></script>
+<script>
+    // 初始化粒子（画布id）
+    particle.init('my_canvas');
+</script>

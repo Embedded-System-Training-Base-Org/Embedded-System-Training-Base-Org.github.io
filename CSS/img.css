@@ -1,9 +1,9 @@
-        img
+        .img_transparent
         {
         opacity:0.4;
         filter:alpha(opacity=40); /*  IE8 及其更早版本 */
         }
-        img:hover
+        .img_transparent:hover
         {
         opacity:1.0;
         filter:alpha(opacity=100); /* IE8 及其更早版本 */

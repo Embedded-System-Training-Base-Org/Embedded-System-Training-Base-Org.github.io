@@ -5,40 +5,12 @@
         <link rel="stylesheet" href="/CSS/topnav.css">
         <link rel="stylesheet" href="/CSS/background.css">
         <link rel="stylesheet" href="/CSS/img.css">
+        <link rel="stylesheet" href="/CSS/show_text.css">
         <title>嵌入式系统训练基地</title>
         <link rel="icon" href="/img/bitbug_favicon.ico">
     </head>
     <style>
         body {margin:0;}
-
-        .text{
-          font-family: 'fangsong';
-          display: inline-block;
-          position: relative;
-          font-size: 40px;
-          height: 60px;
-          line-height: 60px;
-          color: rgb(245, 245, 245);
-        }
-        .text::after{
-            content: '';
-            position: absolute;
-            right: -10px;
-            top: 5px;
-            height: 50px;
-            width: 3px;     
-            background-color: #fff;
-            animation: san 0.5s steps(1) infinite;
-        }
-        @keyframes san{
-            0%,100%{
-                background-color: #fff;
-            }
-            50%{
-               background-color: transparent;
-            }
-
-        }
     </style>
     <body class = "background">
         <div class="topnav">
@@ -53,44 +25,6 @@
                 <span class="text" ></span>
             </h1>
         </div>
-
-
-        <script>
-            const text = document.querySelector('.text');
-            const txt  =["嵌入式系统训练基地","欢迎你的加入",]; 
-            
-            var index=0;
-            var xiaBiao= 0;
-            var huan = true;
-         
-            setInterval(function(){
-               
-                if(huan){      
-                    text.innerHTML = txt[xiaBiao].slice(0,++index);
-                    console.log(index);
-                }
-                else{
-                    text.innerHTML = txt[xiaBiao].slice(0,index--);
-                    console.log(index);
-                }
-    
-                if(index==txt[xiaBiao].length+3)
-                {
-                    huan = false;
-                }
-                else if(index<0)
-                {
-                    index = 0;
-                    huan = true;
-                    xiaBiao++;
-                    if(xiaBiao>=txt.length)
-                    {
-                        xiaBiao=0; 
-                    }
-                }
-    
-            },200)
-    
-        </script>
+        <script src = "script/Home.js"></script>
     </body>
     </html>

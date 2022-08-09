@@ -1,0 +1,28 @@
+.text{
+    font-family: 'fangsong';
+    display: inline-block;
+    position: relative;
+    font-size: 40px;
+    height: 60px;
+    line-height: 60px;
+    color: rgb(245, 245, 245);
+}
+.text::after{
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 5px;
+    height: 50px;
+    width: 3px;     
+    background-color: #fff;
+    animation: san 0.5s steps(1) infinite;
+}
+@keyframes san{
+    0%,100%{
+        background-color: #fff;
+    }
+    50%{
+       background-color: transparent;
+    }
+
+}
