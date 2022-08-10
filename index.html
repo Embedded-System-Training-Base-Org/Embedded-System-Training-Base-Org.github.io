@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="author" content="寰宇体">
         <!-- 外部CSS调用 -->
         <link rel="stylesheet" href="/CSS/topnav.css">
         <link rel="stylesheet" href="/CSS/background.css">
@@ -12,18 +13,41 @@
     <style>
         body {margin:0;}
     </style>
-    <body class = "background">
-        <div class="topnav">
-            <a class="active" href="/index.html">主页</a>
-            <a href="/html/about us/index.html">关于我们</a>
-            <a href="/html/introduct/index.html">实验室介绍</a>
-            <a href="/html/recruitment/index.html">招新相关</a>
-        </div>
-        <div align = "center">
-            <a href="/index.html"><img src = "/img/LOGO1.png" width = "30%" alt = "这是个图标" title = "好耶，是个图标！"></a>
-            <h1>
-                <span class="text" ></span>
-            </h1>
+    <body>
+        <div class = "loader-wrapper">
+            <div class="topnav">
+                <a class="active" href="/index.html">主页</a>
+                <a href="/html/about us/index.html">关于我们</a>
+                <a href="/html/introduct/index.html">实验室介绍</a>
+                <a href="/html/recruitment/index.html">招新相关</a>
+            </div>
+            <div align = "center">
+                <div class="loader"></div>
+                    <div style="position: relation;">
+                        <div class="ico">
+                        <a href="/index.html"><img src = "/img/LOGO1.png" width = 60% alt = "这是个图标" title = "好耶，是个图标！"></a>
+                        </div>
+                    </div>
+                <div class="write_text">
+                    <h1>
+                        <span class="text" ></span>
+                    </h1>
+                </div>
+                <div class="loader-text">
+                    <!-- 10个div -->
+                    <div>E</div>
+                    <div>M</div>
+                    <div>B</div>
+                    <div>Y</div>
+                    <div>Y</div>
+                    <div>D</div>
+                    <div>S</div>
+                    <div>-</div>
+                    <div>-</div>
+                    <div>-</div>
+                </div>
+            </div>
+
         </div>
         <script src = "script/Home.js"></script>
     </body>
