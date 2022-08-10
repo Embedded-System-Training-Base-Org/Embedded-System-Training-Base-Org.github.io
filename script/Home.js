@@ -9,11 +9,9 @@
                
                 if(huan){      
                     text.innerHTML = txt[xiaBiao].slice(0,++index);
-                    console.log(index);
                 }
                 else{
                     text.innerHTML = txt[xiaBiao].slice(0,index--);
-                    console.log(index);
                 }
     
                 if(index==txt[xiaBiao].length+3)
