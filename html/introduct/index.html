@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- 外部CSS调用 -->
+        <!-- 外部全局CSS调用 -->
         <link rel="stylesheet" href="/CSS/topnav.css">
         <link rel="stylesheet" href="/CSS/background.css">
         <link rel="stylesheet" href="/CSS/img.css">
+        <!-- 外部CSS调用 -->
+        <link rel="stylesheet" href="css/pic_flash.css">
         <title>嵌入式系统训练基地</title>
         <link rel="icon" href="../../img/bitbug_favicon.ico">
     </head>
@@ -22,6 +24,13 @@
             <div align = "center">
                 <a href="/index.html"><img src = "/img/LOGO1.png" width = "100px" alt = "这是个图标" title = "好耶，是个图标！"></a>
             </div>
+            <div class="slide-box">
+                <div class="banner-box"></div>
+                <button class="slide-left-btn material-icons">arrow_back_ios</button>
+                <button class="slide-right-btn material-icons">arrow_forward_ios</button>
+                <div class="pagination-box"></div>
+              </div>
         </div>
     </body>
+        <script src="script/pic_flash.js"></script>
     </html>
