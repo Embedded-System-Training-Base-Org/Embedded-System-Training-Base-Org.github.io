@@ -99,21 +99,21 @@ class Slide {
   // 获取 banner-itemDOM 字符串，用来渲染 DOM
   getBannerItemHTML(imageName) {
     if(imageName == 'vJnxj1.md.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="电赛一等奖证书"><p align = 'center'>电赛一等奖证书</p></div>`
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="电赛一等奖证书"><p align = 'center' style='margin-top: 10px;'>电赛一等奖证书</p></div>`
     if(imageName == 'vJnX9J.md.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="基地获奖"><p align = 'center'>基地获奖</p></div>`
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="基地获奖"><p align = 'center' style='margin-top: 10px;'>基地获奖</p></div>`
     if(imageName == 'vJnon0.md.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="蓝桥杯获奖"><p align = 'center'>蓝桥杯获奖</p></div>`
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="蓝桥杯获奖"><p align = 'center' style='margin-top: 10px;'>蓝桥杯获奖</p></div>`
     if(imageName == 'vJnTBV.png')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="嵌入式邀请赛三等奖"><p align = 'center'>嵌入式邀请赛三等奖</p></div>`
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="嵌入式邀请赛三等奖"><p align = 'center style='margin-top: 10px;''>嵌入式邀请赛三等奖</p></div>`
     if(imageName == 'vJnqNF.md.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="第一届邦普杯三等奖"><p align = 'center'>第一届邦普杯三等奖</p></div>`
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="第一届邦普杯三等奖"><p align = 'center' style='margin-top: 10px;'>第一届邦普杯三等奖</p></div>`
     if(imageName == 'vJnj39.md.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="四轴飞行器"><p align = 'center'>四轴飞行器</p></div>`
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="四轴飞行器"><p align = 'center' style='margin-top: 10px;'>四轴飞行器</p></div>`
     if(imageName == 'vJnLh4.md.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="手势识别划拳判断"><p align = 'center'>手势识别划拳判断</p></div>`
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="手势识别划拳判断"><p align = 'center' style='margin-top: 10px;'>手势识别划拳判断</p></div>`
     if(imageName == 'vJnvcR.md.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="基地成员会议"><p align = 'center'>基地成员会议</p></div>`
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="基地成员会议"><p align = 'center' style='margin-top: 10px;'>基地成员会议</p></div>`
     return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="${imageName}"></div>`
   }
 
