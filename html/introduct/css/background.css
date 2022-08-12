@@ -1,0 +1,29 @@
+.background
+{
+    /* background-image:url("../img/background.png");
+    background-size: 400%;
+    background-size: 100% 100%;
+    background-attachment: fixed; */
+    /* 固定定位 */
+
+    /* 固定定位 */
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    /* 渐变背景 */
+    background: linear-gradient(45deg,rgb(90,54,148) 0%,rgb(19,189,206) 33%,rgb(0,148,217) 66%,rgb(111,199,181) 100%);
+    background-size: 400%;
+    background-position: 0% 100%;
+    /* 执行背景渐变动画：动画名 时长 加速后减速 无限次播放 */
+    animation: gradient 7.5s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    50%{
+        background-position: 100% 0%;
+    }
+}
