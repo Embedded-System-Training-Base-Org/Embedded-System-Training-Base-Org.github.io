@@ -13,7 +13,7 @@
         padding: 20px;
         margin: 20px;
         position: relative;
-        width: 350px;
+        width: 360px;
         height: 420px;
         background-color: rgba(255, 255, 255, 0.25);
         backdrop-filter: blur(6px);
@@ -23,7 +23,9 @@
         -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
         border-radius: 12px;
         -webkit-border-radius: 12px;
-        color: rgba(0, 0, 0, 0.9);
+        color: rgba(0, 0, 0, 1.0);
+        font-family:"Comic Sans MS", cursive, sans-serif;
+        font-weight: bold;
     }
 
     #glass_height_1 {

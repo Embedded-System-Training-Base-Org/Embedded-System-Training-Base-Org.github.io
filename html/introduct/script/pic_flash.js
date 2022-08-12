@@ -16,32 +16,32 @@ class Slide {
     // 图片对象数组
     this.banners = [
       {
-        imageName: '1.jpg',
+        imageName: 'vJnxj1.md.jpg',
       },
       {
-        imageName: '2.jpg',
+        imageName: 'vJnX9J.md.jpg',
       },
       {
-        imageName: '3.jpg',
+        imageName: 'vJnon0.md.jpg',
       },
       {
-        imageName: '4.jpg',
+        imageName: 'vJnTBV.png',
       },
       {
-        imageName: '5.jpg',
+        imageName: 'vJnqNF.md.jpg',
       },
       {
-        imageName: '6.jpg',
+        imageName: 'vJnj39.md.jpg',
       },
       {
-        imageName: '7.jpg',
+        imageName: 'vJnLh4.md.jpg',
       },
       {
-        imageName: '8.jpg',
+        imageName: 'vJnvcR.md.jpg',
       },
       // 可以继续增加图片
     ];
-    this.imageUrl = './images/';
+    this.imageUrl = 'https://s1.ax1x.com/2022/08/12/';
 
     // 定时器
     this.timer = null;
@@ -98,23 +98,23 @@ class Slide {
 
   // 获取 banner-itemDOM 字符串，用来渲染 DOM
   getBannerItemHTML(imageName) {
-    if(imageName == '1.jpg')
-      return `<div class="banner-item"><img src="https://s1.ax1x.com/2022/08/12/vJnxj1.jpg" title ="电赛一等奖证书"><p align = 'center'>电赛一等奖证书</p></div>`
-    if(imageName == '2.jpg')
+    if(imageName == 'vJnxj1.md.jpg')
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="电赛一等奖证书"><p align = 'center'>电赛一等奖证书</p></div>`
+    if(imageName == 'vJnX9J.md.jpg')
       return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="基地获奖"><p align = 'center'>基地获奖</p></div>`
-    if(imageName == '3.jpg')
+    if(imageName == 'vJnon0.md.jpg')
       return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="蓝桥杯获奖"><p align = 'center'>蓝桥杯获奖</p></div>`
-    if(imageName == '4.jpg')
+    if(imageName == 'vJnTBV.png')
       return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="嵌入式邀请赛三等奖"><p align = 'center'>嵌入式邀请赛三等奖</p></div>`
-    if(imageName == '5.jpg')
+    if(imageName == 'vJnqNF.md.jpg')
       return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="第一届邦普杯三等奖"><p align = 'center'>第一届邦普杯三等奖</p></div>`
-    if(imageName == '6.jpg')
+    if(imageName == 'vJnj39.md.jpg')
       return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="四轴飞行器"><p align = 'center'>四轴飞行器</p></div>`
-    if(imageName == '7.jpg')
+    if(imageName == 'vJnLh4.md.jpg')
       return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="手势识别划拳判断"><p align = 'center'>手势识别划拳判断</p></div>`
-    if(imageName == '8.jpg')
+    if(imageName == 'vJnvcR.md.jpg')
       return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="基地成员会议"><p align = 'center'>基地成员会议</p></div>`
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="${imageName}"></div>`
+    return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="${imageName}"></div>`
   }
 
   // 渲染 DOM
