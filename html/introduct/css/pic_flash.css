@@ -10,8 +10,8 @@
   margin: 30px auto;
   height: 300px;
   width: 1080px;
-  max-width: 1800px;
-  min-width: 0px;
+  max-width: 70%;
+
   /* background-color: antiquewhite; */
 }
 
@@ -57,7 +57,7 @@
 }
 
 .banner-item.left>p {
-  color:rgba(0,0,0,0.5);
+  color:rgba(0,0,0,0.0);
 }
 
 .banner-item.right {
@@ -68,7 +68,7 @@
   border-radius: 10px;
 }
 .banner-item.right>p {
-  color:rgba(0,0,0,0.5);
+  color:rgba(0,0,0,0.0);
 }
 
 .banner-item.middle {
