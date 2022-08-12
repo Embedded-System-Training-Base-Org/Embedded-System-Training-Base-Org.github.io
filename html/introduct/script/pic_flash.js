@@ -99,7 +99,7 @@ class Slide {
   // 获取 banner-itemDOM 字符串，用来渲染 DOM
   getBannerItemHTML(imageName) {
     if(imageName == '1.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="电赛一等奖证书"><p align = 'center'>电赛一等奖证书</p></div>`
+      return `<div class="banner-item"><img src="https://s1.ax1x.com/2022/08/12/vJnxj1.jpg" title ="电赛一等奖证书"><p align = 'center'>电赛一等奖证书</p></div>`
     if(imageName == '2.jpg')
       return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="基地获奖"><p align = 'center'>基地获奖</p></div>`
     if(imageName == '3.jpg')
