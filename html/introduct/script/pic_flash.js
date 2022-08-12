@@ -105,7 +105,7 @@ class Slide {
     if(imageName == 'vJnon0.md.jpg')
       return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="蓝桥杯获奖"><p align = 'center' style='margin-top: 10px;'>蓝桥杯获奖</p></div>`
     if(imageName == 'vJnTBV.png')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="嵌入式邀请赛三等奖"><p align = 'center style='margin-top: 10px;''>嵌入式邀请赛三等奖</p></div>`
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="嵌入式邀请赛三等奖"><p align = 'center' style='margin-top: 10px;'>嵌入式邀请赛三等奖</p></div>`
     if(imageName == 'vJnqNF.md.jpg')
       return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="第一届邦普杯三等奖"><p align = 'center' style='margin-top: 10px;'>第一届邦普杯三等奖</p></div>`
     if(imageName == 'vJnj39.md.jpg')
