@@ -2,9 +2,9 @@
     font-family: 'fangsong';
     display: inline-block;
     position: relative;
-    font-size: 60px;
-    height: 60px;
-    line-height: 60px;
+    font-size: 45px;
+    height: 45px;
+    line-height: 45px;
     color: rgb(245, 245, 245);
     display:block; /*内联对象需加*/
     word-break:keep-all; /* 不换行 */
