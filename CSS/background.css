@@ -116,6 +116,7 @@ body{
     transform: rotate(180deg);
     /* 执行文字移动动画 */
     animation: move 2s linear infinite;
+    --times-t: 0.2
 }
 /* 最后面的三个圆 */
 .loader-text div:nth-child(8)::before,
@@ -200,12 +201,12 @@ body{
         right: 0;
         opacity: 0;
     }
-    35%{
+    41%{
         right: 41%;
         opacity: 1;
         transform: rotate(0);
     }
-    65%{
+    59%{
         right: 59%;
         opacity: 1;
         transform: rotate(0);
