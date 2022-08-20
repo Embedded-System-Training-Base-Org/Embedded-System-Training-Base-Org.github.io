@@ -12,7 +12,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500vh;
+    height: 400vh;
     /* vh是视窗高度的百分比，%是父元素高度的百分比 */
 }
 
@@ -21,6 +21,7 @@ img.animationchange1{
     height: 60rem;
     width: 10rem;
     margin: 1rem;
+    margin-top: 30px;
     border-radius: 20rem;
 
     object-fit: cover;
@@ -53,6 +54,64 @@ i:nth-child(5) img.animationchange1
     animation: swiper 30s 24s infinite;
 }
 
+/* 设计文字淡入淡出动画 */
+
+p.Textshow1
+{
+    color: rgba(0,0,0,0);
+    font-size: 50px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: -9999px;
+    animation: te 30s infinite;
+}
+p.Textshow2
+{
+    color: rgba(0,0,0,0);
+    font-size: 50px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: -9999px;
+    animation: te 30s 6s infinite;
+}
+p.Textshow3
+{
+    color: rgba(0,0,0,0);
+    font-size: 50px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: -9999px;
+    animation: te 30s 12s infinite;
+}
+p.Textshow4
+{
+    color: rgba(0,0,0,0);
+    font-size: 50px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: -9999px;
+    animation: te 30s 18s infinite;
+}
+p.Textshow5
+{
+    color: rgba(0,0,0,0);
+    font-size: 50px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: -9999px;
+    animation: te 30s 24s infinite;
+}
+
 @keyframes swiper
 {
     0%{
@@ -74,5 +133,29 @@ i:nth-child(5) img.animationchange1
     100%{
         width:var(--shrink-width);
         border-radius: var(--shrink-radius);
+    }
+}
+
+@keyframes te
+{
+    0%{
+        color: rgba(0,0,0,0);
+        text-indent: -9999px;
+    }
+    1%{
+        color: rgba(0,0,0,1);
+        text-indent: 1px;
+    }
+    20%{
+        color: rgba(0,0,0,1);
+        text-indent: 1px;
+    }
+    21%{
+        color: rgba(0,0,0,0);
+        text-indent: -9999px;
+    }
+    100%{
+        color: rgba(0,0,0,0);
+        text-indent: -9999px;
     }
 }
