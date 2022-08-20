@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 40%;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500vh;
+    /* vh是视窗高度的百分比，%是父元素高度的百分比 */
+}
+
+img.animationchange1{
+    background-color: #666;
+    height: 60rem;
+    width: 10rem;
+    margin: 1rem;
+    border-radius: 20rem;
+
+    object-fit: cover;
+    /* 用的CSS变量，下面可以调用它 */
+    --expand-width: 100rem;
+    --shrink-width: 10rem;
+    --expand-radius: 3.6rem;
+    --shrink-radius:20rem;
+}
+
+/* 设计展开收起的动画 */
+i:nth-child(1) img.animationchange1
+{
+    animation: swiper 30s infinite;
+}
+i:nth-child(2) img.animationchange1
+{
+    animation: swiper 30s 6s infinite;
+}
+i:nth-child(3) img.animationchange1
+{
+    animation: swiper 30s 12s infinite;
+}
+i:nth-child(4) img.animationchange1
+{
+    animation: swiper 30s 18s infinite;
+}
+i:nth-child(5) img.animationchange1
+{
+    animation: swiper 30s 24s infinite;
+}
+
+@keyframes swiper
+{
+    0%{
+        width:var(--shrink-width);
+        border-radius: var(--shrink-radius);
+    }
+    1%{
+        width:var(--expand-width);
+        border-radius: var(--expand-radius);
+    }
+    20%{
+        width:var(--expand-width);
+        border-radius: var(--expand-radius);
+    }
+    21%{
+        width:var(--shrink-width);
+        border-radius: var(--shrink-radius);
+    }
+    100%{
+        width:var(--shrink-width);
+        border-radius: var(--shrink-radius);
+    }
+}
