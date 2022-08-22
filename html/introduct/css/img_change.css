@@ -12,7 +12,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400vh;
+    height: 500vh;
     /* vh是视窗高度的百分比，%是父元素高度的百分比 */
 }
 
