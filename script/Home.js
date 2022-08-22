@@ -1,5 +1,5 @@
             const text = document.querySelector('.text');
-            const txt  =["嵌入式系统训练基地","欢迎你的加入",]; 
+            const txt  =["嵌入式系统与智能车创新基地","欢迎你的加入",]; 
             
             var index=0;
             var xiaBiao= 0;
