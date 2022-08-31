@@ -48,7 +48,7 @@
                     <div class="pagination-box">
                 </div>
                 
-                <div style="display: flex;flex-direction: row;justify-content: center;flex-wrap: nowrap;">
+                <div style="display: flex;flex-direction: row;justify-content: center;flex-wrap: nowrap;width: auto;">
                     <i><img src="https://s1.ax1x.com/2022/08/20/vstBGV.md.jpg" class = "animationchange1" alt=""><p align = "center" class="Textshow1">电赛二等奖</p></i>
                     <i><img src="https://s1.ax1x.com/2022/08/20/vstyMF.md.jpg" class = "animationchange1" alt=""><p align = "center" class="Textshow2">嵌入式邀请赛三等奖</p></i>
                     <i><img src="https://s1.ax1x.com/2022/08/20/vstD2T.md.jpg" class = "animationchange1" alt=""><p align = "center" class="Textshow3">嵌入式邀请赛二等奖</p></i>
@@ -62,17 +62,17 @@
                         <iframe src="//player.bilibili.com/player.html?aid=259097545&bvid=BV1ca411f7Pm&cid=792307942&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width= "100%" height="500px"> </iframe>
                         <p style="font-family:'Comic Sans MS', cursive, sans-serif;font-weight: bold;font-size: 40px;">胡桃摇</p>
                     </div>
-                    <div style="margin-top: 30px; width: 100%;">
+                    <div style="margin-top: 30px; width: auto;">
                         <iframe src="//player.bilibili.com/player.html?aid=984250924&bvid=BV1Kt4y1G71o&cid=796829944&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width= "100%" height="500px"> </iframe>
                         <p style="font-family:'Comic Sans MS', cursive, sans-serif;font-weight: bold;font-size: 40px;">简易贪吃蛇</p>
                     </div>
                     <hr>
-                    <div style="margin-top: 30px; width: 100%;">
+                    <div style="margin-top: 30px; width: auto;">
                         <iframe src="//player.bilibili.com/player.html?aid=644273813&bvid=BV1wY4y1A7R1&cid=796830896&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width= "100%" height="540px"> </iframe>
                         <p style="margin-top: 5px;font-family:'Comic Sans MS', cursive, sans-serif;font-weight: bold;font-size: 40px;">简易计算器</p>
                     </div>
                     <hr>
-                    <div style="margin-top: 30px; width: 100%;">
+                    <div style="margin-top: 30px; width: auto;">
                         <iframe src="//player.bilibili.com/player.html?aid=984611672&bvid=BV1jt4y137Ka&cid=803590606&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width= "100%" height="540px"> </iframe>
                         <p style="margin-top: 5px;font-family:'Comic Sans MS', cursive, sans-serif;font-weight: bold;font-size: 40px;">巡线小车</p>
                     </div>
@@ -82,4 +82,28 @@
 
     </body>
         <script src="script/pic_flash.js"></script>
+        <script type="text/javascript">
+            function add_css(str_css) { //Copyright @ rainic.com
+            try { //IE下可行
+                var style = document.createStyleSheet();
+                style.cssText = str_css;
+                }
+            catch (e) 
+                { //Firefox,Opera,Safari,Chrome下可行
+                    var style = document.createElement("style");
+                    style.type = "text/css";
+                    style.textContent = str_css;
+                    document.getElementsByTagName("HEAD").item(0).appendChild(style);
+                }
+            }
+            //判断是移动端还是PC端
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent)) {
+                //移动端   
+                add_css("html{font-size:20%;}");         
+            } else {
+                add_css("html{font-size:40%;}");
+            }
+        </script>
+        
     </html>

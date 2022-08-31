@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-html{
-    font-size: 40%;
-}
-
 body
 {
     display: flex;
@@ -20,7 +16,7 @@ img.animationchange1{
     background-color: #666;
     height: 60rem;
     width: 10rem;
-    margin: 1rem;
+    margin: 0.7rem;
     margin-top: 30px;
     border-radius: 20rem;
 
