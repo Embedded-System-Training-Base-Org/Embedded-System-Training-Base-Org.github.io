@@ -5,3 +5,12 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+.pic_cir
+{
+    margin-left: 50px;
+    background-color: #666;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
