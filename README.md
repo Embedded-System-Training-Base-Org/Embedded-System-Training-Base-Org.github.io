@@ -4,7 +4,7 @@
     <h2>地址:</h2>
     <p>桂林电子科技大学花江校区科技楼311</p>
     <h2>网址:</h2>
-    <a href = "https://embedded-system-training-base.github.io/">embedded-system-training-base.github.io</a>
+    <a href = "https://embedded-system-training-base-org.github.io/">embedded-system-training-base.github.io</a>
     <hr>
     <p>制作：寰宇体</p>
 </div>
