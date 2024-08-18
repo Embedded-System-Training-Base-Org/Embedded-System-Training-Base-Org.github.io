@@ -13,35 +13,42 @@ class Slide {
     // bannerItemDOMs length
     this.bannerItemDOMsLen = 0;
 
+
     // 图片对象数组
     this.banners = [
       {
-        imageName: 'vJnxj1.md.jpg',
+        imageName: '18/pACvPK0.jpg',
       },
       {
-        imageName: 'vJnX9J.md.jpg',
+        imageName: '17/pACsLJs.jpg',
       },
       {
-        imageName: 'vJnon0.md.jpg',
+        imageName: '17/pACsqij.jpg',
       },
       {
-        imageName: 'vJnTBV.png',
+        imageName: '17/pACsHoQ.jpg',
       },
       {
-        imageName: 'vJnqNF.md.jpg',
+        imageName: '17/pACs7dg.jpg',
       },
       {
-        imageName: 'vJnj39.md.jpg',
+        imageName: '17/pACsTeS.jpg',
       },
       {
-        imageName: 'vJnLh4.md.jpg',
+        imageName: '17/pACs5sf.jpg',
       },
       {
-        imageName: 'vJnvcR.md.jpg',
+        imageName: '17/pACcEqK.png',
+      },
+      {
+        imageName: '17/pACcAr6.jpg',
+      },
+      {
+        imageName: '17/pACckKx.jpg',
       },
       // 可以继续增加图片
     ];
-    this.imageUrl = 'https://s1.ax1x.com/2022/08/12/';
+    this.imageUrl = 'https://s21.ax1x.com/2024/08/';
 
     // 定时器
     this.timer = null;
@@ -96,24 +103,30 @@ class Slide {
     return this.slideBoxDOM.querySelectorAll('.banner-item');
   }
 
+
+
   // 获取 banner-itemDOM 字符串，用来渲染 DOM
   getBannerItemHTML(imageName) {
-    if(imageName == 'vJnxj1.md.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="电赛一等奖证书"><p align = 'center' style='margin-top: 10px;'>电赛一等奖证书</p></div>`
-    if(imageName == 'vJnX9J.md.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="基地获奖"><p align = 'center' style='margin-top: 10px;'>基地获奖</p></div>`
-    if(imageName == 'vJnon0.md.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="蓝桥杯获奖"><p align = 'center' style='margin-top: 10px;'>蓝桥杯获奖</p></div>`
-    if(imageName == 'vJnTBV.png')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="嵌入式邀请赛三等奖"><p align = 'center' style='margin-top: 10px;'>嵌入式邀请赛三等奖</p></div>`
-    if(imageName == 'vJnqNF.md.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="第一届邦普杯三等奖"><p align = 'center' style='margin-top: 10px;'>第一届邦普杯三等奖</p></div>`
-    if(imageName == 'vJnj39.md.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="四轴飞行器"><p align = 'center' style='margin-top: 10px;'>四轴飞行器</p></div>`
-    if(imageName == 'vJnLh4.md.jpg')
+    if(imageName == '18/pACvPK0.jpg')
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="四轴无人飞行器"><p align = 'center' style='margin-top: 10px;'>四轴无人飞行器</p></div>`
+    if(imageName == '17/pACsLJs.jpg')
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="四轴无人飞行器"><p align = 'center' style='margin-top: 10px;'>四轴无人飞行器</p></div>`
+    if(imageName == '17/pACsqij.jpg')
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="四轴无人飞行器"><p align = 'center' style='margin-top: 10px;'>四轴无人飞行器</p></div>`
+    if(imageName == '17/pACsHoQ.jpg')
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="车赛独轮车"><p align = 'center' style='margin-top: 10px;'>车赛独轮车</p></div>`
+    if(imageName == '17/pACs7dg.jpg')
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="可堆叠式的分体外卖柜"><p align = 'center' style='margin-top: 10px;'>可堆叠式的分体外卖柜</p></div>`
+    if(imageName == '17/pACsTeS.jpg')
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="果园智能巡检机器人"><p align = 'center' style='margin-top: 10px;'>果园智能巡检机器人</p></div>`
+    if(imageName == '17/pACs5sf.jpg')
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="国二电磁车"><p align = 'center' style='margin-top: 10px;'>国二电磁车</p></div>`
+    if(imageName == '17/pACcEqK.png')
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="搬运货物小车"><p align = 'center' style='margin-top: 10px;'>搬运货物小车</p></div>`
+    if(imageName == '17/pACcAr6.jpg')
+      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="基地环境展示"><p align = 'center' style='margin-top: 10px;'>基地环境展示</p></div>`
+    if(imageName == '17/pACckKx.jpg')
       return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="手势识别划拳判断"><p align = 'center' style='margin-top: 10px;'>手势识别划拳判断</p></div>`
-    if(imageName == 'vJnvcR.md.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="基地成员会议"><p align = 'center' style='margin-top: 10px;'>基地成员会议</p></div>`
     return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="${imageName}"></div>`
   }
 
