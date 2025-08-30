@@ -17,39 +17,47 @@ class Slide {
     // 图片对象数组
     this.banners = [
       {
-        imageName: '18/pACvPK0.jpg',
+        imageName: 'https://s21.ax1x.com/2024/08/18/pACvPK0.jpg',
       },
       {
-        imageName: '17/pACsLJs.jpg',
+        imageName: 'https://s21.ax1x.com/2024/08/17/pACsLJs.jpg',
       },
       {
-        imageName: '17/pACsqij.jpg',
+        imageName: 'https://s21.ax1x.com/2024/08/17/pACsqij.jpg',
       },
       {
-        imageName: '17/pACsHoQ.jpg',
+        imageName: 'https://s21.ax1x.com/2024/08/17/pACsHoQ.jpg',
       },
       {
-        imageName: '17/pACs7dg.jpg',
+        imageName: 'https://s21.ax1x.com/2024/08/17/pACs7dg.jpg',
       },
       {
-        imageName: '17/pACsTeS.jpg',
+        imageName: 'https://s21.ax1x.com/2024/08/17/pACsTeS.jpg',
       },
       {
-        imageName: '17/pACs5sf.jpg',
+        imageName: 'https://s21.ax1x.com/2024/08/17/pACs5sf.jpg',
       },
       {
-        imageName: '17/pACcEqK.png',
+        imageName: 'https://s21.ax1x.com/2024/08/17/pACcEqK.png',
       },
       {
-        imageName: '17/pACcAr6.jpg',
+        imageName: 'https://s21.ax1x.com/2024/08/17/pACcAr6.jpg',
       },
       {
-        imageName: '17/pACckKx.jpg',
+        imageName: 'https://s21.ax1x.com/2024/08/17/pACckKx.jpg',
+      },
+      {
+        imageName: 'https://s21.ax1x.com/2025/08/29/pVciHc4.jpg',
+      },
+      {
+        imageName: 'https://s21.ax1x.com/2025/08/29/pVciT9U.jpg',
+      },
+      {
+        imageName: 'https://s21.ax1x.com/2025/08/29/pVci73F.jpg',
       },
       // 可以继续增加图片
     ];
-    this.imageUrl = 'https://s21.ax1x.com/2024/08/';
-
+ 
     // 定时器
     this.timer = null;
   }
@@ -107,27 +115,33 @@ class Slide {
 
   // 获取 banner-itemDOM 字符串，用来渲染 DOM
   getBannerItemHTML(imageName) {
-    if(imageName == '18/pACvPK0.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="四轴无人飞行器"><p align = 'center' style='margin-top: 10px;'>四轴无人飞行器</p></div>`
-    if(imageName == '17/pACsLJs.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="四轴无人飞行器"><p align = 'center' style='margin-top: 10px;'>四轴无人飞行器</p></div>`
-    if(imageName == '17/pACsqij.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="四轴无人飞行器"><p align = 'center' style='margin-top: 10px;'>四轴无人飞行器</p></div>`
-    if(imageName == '17/pACsHoQ.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="车赛独轮车"><p align = 'center' style='margin-top: 10px;'>车赛独轮车</p></div>`
-    if(imageName == '17/pACs7dg.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="可堆叠式的分体外卖柜"><p align = 'center' style='margin-top: 10px;'>可堆叠式的分体外卖柜</p></div>`
-    if(imageName == '17/pACsTeS.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="果园智能巡检机器人"><p align = 'center' style='margin-top: 10px;'>果园智能巡检机器人</p></div>`
-    if(imageName == '17/pACs5sf.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="国二电磁车"><p align = 'center' style='margin-top: 10px;'>国二电磁车</p></div>`
-    if(imageName == '17/pACcEqK.png')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="搬运货物小车"><p align = 'center' style='margin-top: 10px;'>搬运货物小车</p></div>`
-    if(imageName == '17/pACcAr6.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="基地环境展示"><p align = 'center' style='margin-top: 10px;'>基地环境展示</p></div>`
-    if(imageName == '17/pACckKx.jpg')
-      return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="手势识别划拳判断"><p align = 'center' style='margin-top: 10px;'>手势识别划拳判断</p></div>`
-    return `<div class="banner-item"><img src="${this.imageUrl+imageName}" title ="${imageName}"></div>`
+    if(imageName == 'https://s21.ax1x.com/2024/08/18/pACvPK0.jpg')
+      return `<div class="banner-item"><img src="${imageName}" title ="四轴无人飞行器"><p align = 'center' style='margin-top: 10px;'>四轴无人飞行器</p></div>`
+    if(imageName == 'https://s21.ax1x.com/2024/08/17/pACsLJs.jpg')
+      return `<div class="banner-item"><img src="${imageName}" title ="四轴无人飞行器"><p align = 'center' style='margin-top: 10px;'>四轴无人飞行器</p></div>`
+    if(imageName == 'https://s21.ax1x.com/2024/08/17/pACsqij.jpg')
+      return `<div class="banner-item"><img src="${imageName}" title ="四轴无人飞行器"><p align = 'center' style='margin-top: 10px;'>四轴无人飞行器</p></div>`
+    if(imageName == 'https://s21.ax1x.com/2024/08/17/pACsHoQ.jpg')
+      return `<div class="banner-item"><img src="${imageName}" title ="车赛独轮车"><p align = 'center' style='margin-top: 10px;'>车赛独轮车</p></div>`
+    if(imageName == 'https://s21.ax1x.com/2024/08/17/pACs7dg.jpg')
+      return `<div class="banner-item"><img src="${imageName}" title ="可堆叠式的分体外卖柜"><p align = 'center' style='margin-top: 10px;'>可堆叠式的分体外卖柜</p></div>`
+    if(imageName == 'https://s21.ax1x.com/2024/08/17/pACsTeS.jpg')
+      return `<div class="banner-item"><img src="${imageName}" title ="果园智能巡检机器人"><p align = 'center' style='margin-top: 10px;'>果园智能巡检机器人</p></div>`
+    if(imageName == 'https://s21.ax1x.com/2024/08/17/pACs5sf.jpg')
+      return `<div class="banner-item"><img src="${imageName}" title ="国二电磁车"><p align = 'center' style='margin-top: 10px;'>国二电磁车</p></div>`
+    if(imageName == 'https://s21.ax1x.com/2024/08/17/pACcEqK.png')
+      return `<div class="banner-item"><img src="${imageName}" title ="搬运货物小车"><p align = 'center' style='margin-top: 10px;'>搬运货物小车</p></div>`
+    if(imageName == 'https://s21.ax1x.com/2024/08/17/pACcAr6.jpg')
+      return `<div class="banner-item"><img src="${imageName}" title ="基地环境展示"><p align = 'center' style='margin-top: 10px;'>基地环境展示</p></div>`
+    if(imageName == 'https://s21.ax1x.com/2024/08/17/pACckKx.jpg')
+      return `<div class="banner-item"><img src="${imageName}" title ="手势识别划拳判断"><p align = 'center' style='margin-top: 10px;'>手势识别划拳判断</p></div>`
+    if(imageName == 'https://s21.ax1x.com/2025/08/29/pVciHc4.jpg')
+      return `<div class="banner-item"><img src="${imageName}" title ="飞行器"><p align = 'center' style='margin-top: 10px;'>飞行器</p></div>`
+    if(imageName == 'https://s21.ax1x.com/2025/08/29/pVciT9U.jpg')
+      return `<div class="banner-item"><img src="${imageName}" title ="工训小车"><p align = 'center' style='margin-top: 10px;'>工训小车</p></div>`
+    if(imageName == 'https://s21.ax1x.com/2025/08/29/pVci73F.jpg')
+      return `<div class="banner-item"><img src="${imageName}" title ="信号系统"><p align = 'center' style='margin-top: 10px;'>信号系统</p></div>`
+    return `<div class="banner-item"><img src="${imageName}" title ="${imageName}"></div>`
   }
 
   // 渲染 DOM
